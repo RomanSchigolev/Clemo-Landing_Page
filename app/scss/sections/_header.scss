@@ -4,7 +4,7 @@
 }
 
 .logo__link{
-  font-size: 30px;
+  font-size: 2.6vmax;
   @include MonBold;
   text-decoration: none;
   color: $accent;
@@ -24,7 +24,7 @@
     text-decoration: none;
     color: $menu_links-color;
     @include MonLight;
-    font-size: 18px;
+    font-size: 1.3vmax;
 
     &:hover{
       color: $accent;
