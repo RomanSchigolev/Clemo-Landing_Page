@@ -1,0 +1,52 @@
+.header{
+  padding-top: 60px;
+  padding-bottom: 70px
+}
+
+.logo__link{
+  font-size: 30px;
+  @include MonBold;
+  text-decoration: none;
+  color: $accent;
+} 
+
+.menu{
+  &__item{
+    margin-right: 30px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  &__link{
+    position: relative;
+    text-decoration: none;
+    color: $menu_links-color;
+    @include MonLight;
+    font-size: 18px;
+
+    &:hover{
+      color: $accent;
+    }
+
+    &::after{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0%;
+      height: 2px;
+      background-color: $accent;
+      transition: all 0.2s linear;
+      -webkit-transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear;
+      -ms-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
+    }
+
+    &:hover::after{
+      width: 50%;
+    }
+  }
+}

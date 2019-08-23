@@ -1,0 +1,33 @@
+.container{
+  width: 82.14vw;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+li{
+  list-style: none;
+}
+
+.section{
+  padding: 90px 0 100px 0;
+}
+
+p{
+  font-size: 18px;
+  @include MonLight;
+  line-height: 27px;
+}
+
+.btn--black{
+  font-size: 1.56vmax;
+  @include MonLight;
+  background-color: $accent;
+  color: #ffffff;
+}
+
+.btn--white{
+  font-size: 18px;
+  @include MonLight;
+  background-color: #ffffff;
+  color: $accent;
+}

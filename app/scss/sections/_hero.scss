@@ -1,0 +1,74 @@
+.hero{
+  &__background{
+    padding: 140px 0 100px;
+    background-image: url('../../img/mainbg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(#ffcb93, 0.7);
+    }
+  }
+
+  &__inner{
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+  }
+
+  &__title{
+    font-size: 4.17vmax;
+    @include MonBold;
+
+    &::after{
+      content: '';
+      display: block;
+      width: 5vw;
+      height: 2px;
+      background-color: $accent;
+      margin: 30px auto;
+    }
+  }
+
+  &__subtitle{
+    display: block;
+    font-size: 2vmax;
+    margin-bottom: 6.3vmin;
+    @include MonLight;
+  }
+
+  &__button{
+    border: none;
+    outline: none;
+    padding: 1.1vmax 2.6vmax;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+
+    &:hover{
+      background-color: #ffcb93;
+      color: $accent;
+      transition: all 0.3s linear;
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      -ms-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+    }
+  }
+}
