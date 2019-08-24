@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Montserrat Thin';
+  src: url('../fonts/Montserrat-Thin.eot');
+  src: url('../fonts/Montserrat-Thin.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Montserrat-Thin.woff') format('woff'),
+  url('../fonts/Montserrat-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+  @mixin MonThin {
+    font-family: 'Montserrat Thin', sans-serif;
+  }
+  
+  @font-face {
+  font-family: 'Montserrat Light';
+  src: url('../fonts/Montserrat-Light.eot');
+  src: url('../fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Montserrat-Light.woff') format('woff'),
+  url('../fonts/Montserrat-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+  @mixin MonLight {
+    font-family: 'Montserrat Light', sans-serif;
+  }
+  
+  @font-face {
+  font-family: 'Montserrat Bold';
+  src: url('../fonts/Montserrat-ExtraBold.eot');
+  src: url('../fonts/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Montserrat-ExtraBold.woff') format('woff'),
+  url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+  @mixin MonBold {
+    font-family: 'Montserrat Bold', sans-serif;
+  }
