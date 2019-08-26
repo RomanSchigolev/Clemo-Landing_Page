@@ -1,9 +1,10 @@
 .hero{
   &__background{
     padding: 11.96vmax 0 8.547vmax;
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
 
     &::before{
@@ -49,16 +50,10 @@
   &__button{
     border: none;
     outline: none;
-    padding: 1.1vmax 2.6vmax;
 
     &:hover{
       background-color: rgba(#ffcb93, 0.7);
       color: $accent;
-      transition: all 0.3s linear;
-      -webkit-transition: all 0.2s linear;
-      -moz-transition: all 0.2s linear;
-      -ms-transition: all 0.2s linear;
-      -o-transition: all 0.2s linear;
     }
   }
 }
