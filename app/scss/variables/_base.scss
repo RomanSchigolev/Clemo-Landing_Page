@@ -12,8 +12,7 @@ li{
 .section{
   &__header{
     text-align: center;
-    padding: 7.69vmax 0 8.547vmax 0;
-    margin: 0 auto;
+    margin: 7.69vmax 0 8.547vmax 0;
   }
 
   &__title{
@@ -37,10 +36,6 @@ li{
   background-color: $accent;
   color: #ffffff;
   border-radius: 10vw;
-  -webkit-border-radius: 10vw;
-  -moz-border-radius: 10vw;
-  -ms-border-radius: 10vw;
-  -o-border-radius: 10vw;
 }
 
 .btn--white{
@@ -49,8 +44,4 @@ li{
   background-color: #ffffff;
   color: $accent;
   border-radius: 10vw;
-  -webkit-border-radius: 10vw;
-  -moz-border-radius: 10vw;
-  -ms-border-radius: 10vw;
-  -o-border-radius: 10vw;
 }
