@@ -33,9 +33,13 @@ li {
   list-style: none;
 }
 
+.section {
+  padding: 7.69vmax 0 8.547vmax;
+}
+
 .section__header {
   text-align: center;
-  margin: 7.69vmax 0 8.547vmax 0;
+  margin: 0 auto 8.547vmax;
 }
 
 .section__title {
@@ -174,7 +178,7 @@ li {
 }
 
 .hero__button:hover {
-  background-color: rgba(255, 203, 147, 0.7);
+  background-color: #ffcb93;
   color: #000000;
 }
 
@@ -378,18 +382,125 @@ li {
   opacity: 1;
 }
 
-.work__item__link {
-  grid-column: 1/-1;
+.work__link {
+  padding: 4.27vmax 0;
 }
 
-.work__item__link .link__more {
+.work__link .link__more {
   text-decoration: none;
   display: inline-block;
 }
 
-.work__item__link .link__more:hover {
-  background-color: rgba(255, 203, 147, 0.7);
+.work__link .link__more:hover {
+  background-color: #ffcb93;
   color: #000000;
+}
+
+.section__team {
+  background-color: #ffe1bd;
+}
+
+.list__button {
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border: none;
+  outline: none;
+}
+
+.list__button svg {
+  fill: #000;
+  width: 3vw;
+  -webkit-transition: fill 0.3s linear;
+  -o-transition: fill 0.3s linear;
+  transition: fill 0.3s linear;
+}
+
+.list__button:focus svg {
+  fill: #ffffff;
+  -webkit-transition: fill 0.3s linear;
+  -o-transition: fill 0.3s linear;
+  transition: fill 0.3s linear;
+}
+
+.list__button--prev {
+  left: 6px;
+}
+
+.list__button--next {
+  right: 6px;
+}
+
+.team__list {
+  position: relative;
+  padding: 0 5vmax;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 4.27vmax;
+  overflow: hidden;
+}
+
+.team__list__indicators {
+  text-align: center;
+}
+
+.team__list__indicators .list__indicator {
+  outline: none;
+  border: 0.085vmax solid #000000;
+  border-radius: 50%;
+  width: 1.11vw;
+  height: 1.11vw;
+  background-color: transparent;
+  margin: 0 1.45vmax;
+}
+
+.team__list__indicators .list__indicator.indicator--active {
+  background-color: #000000;
+}
+
+.team__item {
+  text-align: center;
+  -webkit-flex-basis: 33%;
+  -ms-flex-preferred-size: 33%;
+  flex-basis: 33%;
+}
+
+.team__item__photo {
+  border-radius: 50%;
+  max-width: 14vw;
+  height: auto;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.team__item__name, .team__item__prof {
+  display: block;
+  color: #000000;
+}
+
+.team__item__name {
+  font-family: 'Montserrat Bold', sans-serif;
+  font-size: 3.2vmax;
+  margin-top: 0.85vmax;
+}
+
+.team__item__name::after {
+  content: '';
+  display: block;
+  width: 5vw;
+  height: 2px;
+  background-color: #000000;
+  margin: 0.85vmax auto;
+}
+
+.team__item__prof {
+  font-family: 'Montserrat Light', sans-serif;
+  font-size: 1.538vmax;
 }
 
 /*==========  Desktop First  ==========*/

@@ -99,15 +99,15 @@
     &:hover &__text{
       opacity: 1;
     }
-    &__link{
-      grid-column: 1/-1;
-      .link__more{
-        text-decoration: none;
-        display: inline-block;
-        &:hover{
-          background-color: rgba(#ffcb93, 0.7);
-          color: $accent;
-        }
+  }
+  &__link{
+    padding: 4.27vmax 0;
+    .link__more{
+      text-decoration: none;
+      display: inline-block;
+      &:hover{
+        background-color: #ffcb93;
+        color: $accent;
       }
     }
   }

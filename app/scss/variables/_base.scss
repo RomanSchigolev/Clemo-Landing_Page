@@ -10,9 +10,10 @@ li{
 }
 
 .section{
+  padding: 7.69vmax 0 8.547vmax;
   &__header{
     text-align: center;
-    margin: 7.69vmax 0 8.547vmax 0;
+    margin: 0 auto 8.547vmax;
   }
 
   &__title{
