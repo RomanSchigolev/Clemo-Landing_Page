@@ -1,10 +1,13 @@
 .clients{
+  &__reviews{
+    margin-bottom: 6.837vmax;
+  }
   &__reviews__item{
-    display: flex;
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 7.69vmax;
   }
   &__reviews__photo{
-    max-width: 40vw;
+    max-width: 100%;
     display: block;
     height: auto;
   }
@@ -13,12 +16,11 @@
     @include MonLight;
     color: $text-color;
     line-height: 2.3vmax;
-    margin-left: 7vmax;
   }
   &__item{
     cursor: pointer;
     &__photo img{
-      max-width: 20vw;
+      max-width: 15vw;
        height: auto;
       display: block;
       filter: opacity(0.4);

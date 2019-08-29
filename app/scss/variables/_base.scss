@@ -15,11 +15,13 @@ li{
     text-align: center;
     margin: 0 auto 8.547vmax;
   }
-
   &__title{
     font-size: 5.128vmax;
     @include MonThin;
     color: $accent;
+    &--white{
+      color: #ffffff;
+    }
   }
 }
 

@@ -1,0 +1,59 @@
+.footer{
+  background-color: $accent;
+  &__list{
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5.55vmax;
+  }
+}
+
+.contacts{
+  &__list{
+    grid-row-gap: 4.273vmax;
+  }
+  &__item{
+    color: #ffffff;
+    & svg{
+      fill: #ffffff;
+      width: 1.36vmax;
+      height: 1.6vmax;
+      margin-right: 1.7vmax;
+    }
+    & a{
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.538vmin;
+      @include MonLight;
+      display: block;
+    }
+    & a:hover{
+      text-decoration: underline;
+    }
+  }
+  &__address{
+    font-size: 1.538vmin;
+    @include MonLight;
+    line-height: 2.3vmax;
+  }
+}
+
+.social{
+  &__item{
+    margin-right: 1.7vmax;
+  }
+  &__item:last-of-type{
+    margin-right: 0;
+  }
+  &__link{
+    padding: 1vmax;
+    background-color: #ffffff;
+    border-radius: 50%;
+    & svg{
+      fill: $accent;
+      width: 2.136vmax;
+      margin-right: 0;
+    }
+    &:hover{
+      background-color: #ffe1bd;
+    }
+  }
+}
