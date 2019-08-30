@@ -12,6 +12,16 @@
     height: auto;
     max-width: 100%;
   }
+
+  &__description{
+    opacity: 0;
+    transform: translateX(60px);
+    transition: all 0.5s ease;
+    &.appear{
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 }
 
 .description__designation{

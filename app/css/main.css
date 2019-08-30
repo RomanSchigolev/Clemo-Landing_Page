@@ -201,6 +201,23 @@ li {
   max-width: 100%;
 }
 
+.services__description {
+  opacity: 0;
+  -webkit-transform: translateX(60px);
+  -ms-transform: translateX(60px);
+  transform: translateX(60px);
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.services__description.appear {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
 .description__designation {
   word-break: break-word;
 }
