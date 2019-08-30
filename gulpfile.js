@@ -35,17 +35,17 @@ gulp.task('img-compress', () => {
     .pipe(gulp.dest('app/img/img_compress/'))
 });
 
-// gulp.task('scripts', function(){
-//     return gulp.src([
-//         'app/libraries/jquery-3.3.1.min.js',
-//       //  'app/libraries/wow.min.js',
-//         //'app/libraries/jquery-ui.min.js',
-//     ])
-//     .pipe(concat('libraries.min.js'))
-//     .pipe(uglify())
-//     .pipe(gulp.dest('app/js'))
-//     .pipe(browserSync.reload({stream:true}))
-// });
+gulp.task('scripts', function(){
+    return gulp.src([
+        'app/libs/jquery-3.3.1.min.js'
+      //  'app/libraries/wow.min.js',
+        //'app/libraries/jquery-ui.min.js',
+    ])
+    .pipe(concat('libs.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('app/js'))
+    .pipe(browserSync.reload({stream:true}))
+});
 
 gulp.task('code', () => {
 	return gulp.src('app/*.html')
@@ -85,8 +85,8 @@ gulp.task('prebuild', async () => {
 gulp.task('watch', () => {
 	gulp.watch('app/scss/**/*.scss', gulp.parallel('sass'));
 	gulp.watch('app/*.html', gulp.parallel('code'));
-	// gulp.watch('app/js/**/*.js', gulp.parallel('scripts'));
+	gulp.watch(['libs/**/*.js', 'app/js/main.js'], gulp.parallel('scripts'));
 });
-gulp.task('default', gulp.parallel('watch', 'browserSync', 'sass', 'css-libs' /*'img-compress' 'scripts'*/));
+gulp.task('default', gulp.parallel('watch', 'browserSync', 'sass', 'css-libs', /*'img-compress'*/ 'scripts'));
 gulp.task('build', gulp.parallel('prebuild', 'clean', 'sass'));
 
