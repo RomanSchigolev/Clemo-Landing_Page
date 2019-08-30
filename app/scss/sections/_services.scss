@@ -12,14 +12,26 @@
     height: auto;
     max-width: 100%;
   }
-
-  &__description{
+  &__description:nth-child(odd){
     opacity: 0;
-    transform: translateX(60px);
+    transform: translateX(-60px);
     transition: all 0.5s ease;
-    &.appear{
+    visibility: hidden;
+    &.description--appear{
       opacity: 1;
       transform: translateX(0);
+      visibility: visible;
+    }
+  }
+  &__description:nth-child(even){
+    opacity: 0;
+    transform: translateX(60px);
+    visibility: hidden;
+    transition: all 0.5s ease;
+    &.description--appear{
+      opacity: 1;
+      transform: translateX(0);
+      visibility: visible;
     }
   }
 }
