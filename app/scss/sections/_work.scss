@@ -1,18 +1,11 @@
 .work{
   &__list{
-    //grid-template-columns: repeat(3, 1fr);
-    //grid-gap: 2.564vmax;
-    //height: auto;
-    //width: 100%;
-    //grid-auto-rows: minmax(364px, auto);
-
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 2.564vmax;
     height: auto;
     width: 100%;
     grid-auto-rows: minmax(364px, auto);
   }
-
   &__item{
     position: relative;
     &:nth-child(1){

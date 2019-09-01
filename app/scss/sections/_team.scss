@@ -8,7 +8,6 @@
   top: 50%;
   transform: translateY(-50%);
   border: none;
-  outline: none;
   & svg {
     fill: #000;
     width: 3vw;
@@ -35,7 +34,6 @@
   &__indicators{
     text-align: center;
     .list__indicator{
-      outline: none;
       border:0.085vmax solid $accent;
       border-radius: 50%;
       width: 1.3675vmax;

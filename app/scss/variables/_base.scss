@@ -4,11 +4,9 @@
   padding: 0 1.282vmax;
   margin: 0 auto;
 }
-
 li{
   list-style: none;
 }
-
 .section{
   padding: 7.69vmax 0 8.547vmax;
   &__header{
@@ -24,15 +22,12 @@ li{
     }
   }
 }
-
-
 .paragraph{
   font-size: 1.538vmax;
   @include MonLight;
   line-height: 2.3vmax;
   color: $text-color;
 }
-
 .btn--black{
   font-size: 1.56vmax;
   @include MonLight;
@@ -40,8 +35,8 @@ li{
   color: #ffffff;
   border-radius: 10vw;
   padding: 1.1vmax 2.6vmax;
+  border: none;
 }
-
 .btn--white{
   font-size: 1.56vmax;
   @include MonLight;
@@ -49,4 +44,10 @@ li{
   color: $accent;
   border-radius: 10vw;
   padding: 1.1vmax 2.6vmax;
+  border: none;
+}
+.input__footer--common{
+  background-color: transparent;
+  border: none;
+  outline: none;
 }

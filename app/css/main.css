@@ -66,6 +66,7 @@ li {
   color: #ffffff;
   border-radius: 10vw;
   padding: 1.1vmax 2.6vmax;
+  border: none;
 }
 
 .btn--white {
@@ -75,6 +76,13 @@ li {
   color: #000000;
   border-radius: 10vw;
   padding: 1.1vmax 2.6vmax;
+  border: none;
+}
+
+.input__footer--common {
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
 .header {
@@ -243,7 +251,6 @@ li {
 
 .hero__button {
   border: none;
-  outline: none;
 }
 
 .hero__button:hover {
@@ -255,7 +262,7 @@ li {
   grid-row-gap: 8.547vmax;
 }
 
-.services__item {
+.services__item article {
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 8.547vmax;
 }
@@ -515,7 +522,6 @@ li {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   border: none;
-  outline: none;
 }
 
 .list__button svg {
@@ -557,7 +563,6 @@ li {
 }
 
 .team__list__indicators .list__indicator {
-  outline: none;
   border: 0.085vmax solid #000000;
   border-radius: 50%;
   width: 1.3675vmax;
@@ -668,7 +673,6 @@ li {
 }
 
 .clients__list__indicators .list__indicator {
-  outline: none;
   border: 0.085vmax solid #000000;
   border-radius: 50%;
   width: 1.3675vmax;
@@ -688,6 +692,136 @@ li {
 .footer__list {
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 5.55vmax;
+}
+
+.footer__form .form {
+  grid-row-gap: 4.2735vmax;
+}
+
+.footer__form .form__input {
+  position: relative;
+  overflow: hidden;
+}
+
+.input__footer {
+  width: 100%;
+  padding-top: 2.564vmax;
+  padding-bottom: 1.7vmax;
+  padding-right: 2vmax;
+  font-size: 1.538vmax;
+  color: #ffffff;
+  font-family: 'Montserrat Light', sans-serif;
+}
+
+.input__footer:focus + .label__input .label__content,
+.input__footer:valid + .label__input .label__content {
+  -webkit-transform: translateY(-170%);
+  -ms-transform: translateY(-170%);
+  transform: translateY(-170%);
+  font-size: 1.196vmax;
+}
+
+.input__footer:focus + .label__input::after,
+.input__footer:valid + .label__input::after {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.input__footer--textarea {
+  min-height: 8vmax;
+  resize: vertical;
+}
+
+.input__footer--textarea:focus + .label__textarea .label__content--textarea,
+.input__footer--textarea:valid + .label__textarea .label__content--textarea {
+  -webkit-transform: translateY(-200%);
+  -ms-transform: translateY(-200%);
+  transform: translateY(-200%);
+  font-size: 1.196vmax;
+}
+
+.input__footer--textarea:focus + .label__textarea::after,
+.input__footer--textarea:valid + .label__textarea::after {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.label__input {
+  position: absolute;
+  color: #656565;
+  font-size: 1.538vmax;
+  font-family: 'Montserrat Light', sans-serif;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  border-bottom: 0.085vmax solid #333333;
+}
+
+.label__input::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.label__textarea {
+  position: absolute;
+  color: #656565;
+  font-size: 1.538vmax;
+  font-family: 'Montserrat Light', sans-serif;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  border-bottom: 0.085vmax solid #333333;
+}
+
+.label__textarea::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.label__content {
+  position: absolute;
+  bottom: 1.7vmax;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.label__content--textarea {
+  position: absolute;
+  bottom: 4vmax;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .contacts__list {
@@ -721,6 +855,14 @@ li {
   font-size: 1.538vmin;
   font-family: 'Montserrat Light', sans-serif;
   line-height: 2.3vmax;
+}
+
+.button__send {
+  padding: 1.1vmax 3vmax;
+}
+
+.button__send:hover {
+  background-color: #ffe1bd;
 }
 
 .social__item {
