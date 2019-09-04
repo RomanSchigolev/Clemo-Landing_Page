@@ -1,0 +1,156 @@
+.section__contact{
+  background-color: $accent;
+}
+
+.contact{
+
+  &__reach{
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5.55vmax;
+  }
+  &__form{
+    .form{
+      grid-row-gap: 4.2735vmax;
+      &__input{
+        position: relative;
+        overflow: hidden;
+      }
+    }
+  }
+  &__copy{
+    background-color: #ffffff;
+    padding: 4.27vmax;
+  }
+
+}
+
+.input{
+  &__contact{
+    width: 100%;
+    padding-top: 2.564vmax;
+    padding-bottom: 1.7vmax;
+    padding-right: 2vmax;
+    font-size: 1.538vmax;
+    color: #ffffff;
+    @include MonLight;
+    &:focus + .label__input .label__content,
+    &:valid + .label__input .label__content{
+      transform: translateY(-170%);
+      font-size: 1.196vmax;
+    }
+    &:focus + .label__input::after,
+    &:valid + .label__input::after{
+      transform: translateX(0);
+    }
+    &--textarea{
+      min-height: 10vmax;
+      resize: vertical;
+      border-bottom: 0.085vmax solid #333333;
+    }
+  }
+}
+.label {
+  &__input {
+    position: absolute;
+    color: $text-color;
+    font-size: 1.538vmax;
+    @include MonLight;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    border-bottom: 0.085vmax solid #333333;
+    &::after{
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #ffffff;
+      transform: translateX(-100%);
+      transition: all 0.3s ease;
+    }
+  }
+  &__content{
+    position: absolute;
+    bottom: 1.7vmax;
+    transition: all 0.3s ease;
+  }
+}
+
+.contacts{
+  &__list{
+    grid-row-gap: 4.273vmax;
+  }
+  &__item{
+    color: #ffffff;
+    & svg{
+      fill: #ffffff;
+      width: 1.36vmax;
+      height: 1.6vmax;
+      margin-right: 1.7vmax;
+    }
+    & a{
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.538vmin;
+      @include MonLight;
+      display: block;
+      position: relative;
+    }
+  }
+  &__address{
+    font-size: 1.538vmin;
+    @include MonLight;
+    line-height: 2.3vmax;
+  }
+  &__phone,
+  &__mail{
+    &::after{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      transform: scaleX(0);
+      transform-origin: 50% 50%;
+      background-color: #ffffff;
+      height: 1px;
+      width: 100%;
+      transition: transform 0.3s linear;
+    }
+    &:hover::after{
+      transform: scaleX(1);
+    }
+  }
+}
+.button__send{
+  padding: 1.1vmax 3vmax;
+  &:hover{
+    background-color: #ffe1bd;
+  }
+}
+
+.social{
+  &__item{
+    margin-right: 1.7vmax;
+  }
+  &__item:last-of-type{
+    margin-right: 0;
+  }
+  &__link{
+    padding: 1vmax;
+    background-color: #ffffff;
+    border-radius: 50%;
+    & svg{
+      fill: $accent;
+      width: 2.136vmax;
+      margin-right: 0;
+    }
+    &:hover{
+      background-color: #ffe1bd;
+    }
+  }
+}

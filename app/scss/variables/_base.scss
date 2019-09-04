@@ -7,6 +7,9 @@
 li{
   list-style: none;
 }
+a:focus{
+  outline: auto;
+}
 .section{
   padding: 7.69vmax 0 8.547vmax;
   &__header{
@@ -45,8 +48,9 @@ li{
   border-radius: 10vw;
   padding: 1.1vmax 2.6vmax;
   border: none;
+  outline: none;
 }
-.input__footer--common{
+.input__contact--common{
   background-color: transparent;
   border: none;
   outline: none;
