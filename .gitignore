@@ -1,5 +1,9 @@
 node_modules/
 .idea
-../../Thumbs.db
 PSD_files/
 .bowerrc
+.babelrc
+.gitignore
+package.json
+package-lock.json
+gulpfile.js
