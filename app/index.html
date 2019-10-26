@@ -19,7 +19,6 @@
   <!-- Fonts Google -->
 </head>
 <body>
-
 <header class="header">
   <div class="container">
     <div class="header__content main_flex__nowrap flex__align-items_center flex__jcontent_between">
@@ -48,7 +47,6 @@
     </div>
   </div>
 </header>
-
 <section class="hero">
   <div class="container">
     <div class="hero__background" style="background-image: url(img/mainbg.jpg)">
@@ -60,7 +58,6 @@
     </div>
   </div>
 </section>
-
 <main>
   <section class="section section__services">
     <div class="container">
@@ -68,7 +65,6 @@
         <h2 class="section__title">what we do?</h2>
       </div>
       <ul class="services__list grid">
-
         <li class="services__item grid">
           <article class="grid">
             <div class="services__photo">
@@ -138,11 +134,9 @@
             </div>
           </article>
         </li>
-
       </ul>
     </div>
   </section>
-
   <section class="section__work">
     <div class="container">
       <div class="section__header">
@@ -221,7 +215,6 @@
       </div>
     </div>
   </section>
-
   <section class="section section__team">
     <div class="container">
       <div class="section__header">
@@ -249,13 +242,11 @@
 </svg>
           </button>
         </li>
-
         <li class="team__item">
           <img src="img/teamitem-1.jpg" alt="Paul Haul - art director" class="team__item__photo">
           <span class="team__item__name">paul haul</span>
           <span class="team__item__prof">art director</span>
         </li>
-
         <li class="team__item">
           <img src="img/teamitem-2.jpg" alt="Joshua Spencer - founder" class="team__item__photo">
           <span class="team__item__name">joshua spencer</span>
@@ -267,18 +258,14 @@
           <span class="team__item__name">diane lewis</span>
           <span class="team__item__prof">artist, designer</span>
         </li>
-
       </ul>
-
       <div class="team__list__indicators">
         <button class="list__indicator indicator--active" type="button"></button>
         <button class="list__indicator" type="button"></button>
         <button class="list__indicator" type="button"></button>
       </div>
-
     </div>
   </section>
-
   <section class="section section__clients">
     <div class="container">
       <div class="section__header">
@@ -289,9 +276,9 @@
           <li class="clients__reviews__item grid">
             <a href="#" target="_blank">
               <img class="clients__reviews__photo" id="clients__reviews__photo--current" src="img/clientsitem-1.png"
-                alt="">
+                alt="Current Client">
             </a>
-            <p class="clients__reviews__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            <p class="paragraph clients__reviews__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
               doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
               beatae vitae dicta sunt explicabo. </p>
           </li>
@@ -314,25 +301,25 @@
             <ul class="clients__list__page main_flex__nowrap flex__jcontent_between">
               <li class="clients__item">
                 <div class="clients__item__photo">
-                  <img class="item__photo__img clients__img--active" src="img/clientsitem-1.png" alt="">
+                  <img class="item__photo__img clients__img--active" src="img/clientsitem-1.png" alt="Client 1">
                 </div>
               </li>
 
               <li class="clients__item">
                 <div class="clients__item__photo">
-                  <img class="item__photo__img" src="img/clientsitem-2.png" alt="">
+                  <img class="item__photo__img" src="img/clientsitem-2.png" alt="Client 2">
                 </div>
               </li>
 
               <li class="clients__item">
                 <div class="clients__item__photo">
-                  <img class="item__photo__img" src="img/clientsitem-3.png" alt="">
+                  <img class="item__photo__img" src="img/clientsitem-3.png" alt="Client 3">
                 </div>
               </li>
 
               <li class="clients__item">
                 <div class="clients__item__photo">
-                  <img class="item__photo__img" src="img/clientsitem-4.png" alt="">
+                  <img class="item__photo__img" src="img/clientsitem-4.png" alt="Client 4">
                 </div>
               </li>
             </ul>
@@ -399,7 +386,6 @@
       </div>
     </div>
   </section>
-
   <section class="section section__contact">
     <div class="container">
       <div class="section__header">
@@ -574,7 +560,8 @@
               </label>
             </div>
             <div class="form__input">
-              <textarea class="input__contact input__contact--textarea input__contact--common" required placeholder="your message"></textarea>
+              <textarea class="input__contact input__contact--textarea input__contact--common" id="textarea" required placeholder="your message"></textarea>
+              <label for="textarea" class="label__input"></label>
             </div>
             <div class="form__sending">
               <button type="submit" class="button__send btn--white">submit</button>
@@ -585,15 +572,26 @@
     </div>
   </section>
 </main>
-
 <footer class="footer">
   <div class="footer__copy text-center">
     <span class="footer__title">&copy; 2016 clemo.</span>
     <span class="footer__subtitle">all rights reserved</span>
   </div>
 </footer>
-
 <script src="js/libs.min.js"></script>
-<script src="js/main.js"></script>
+<script src="dist/main.js"></script>
+<noscript>
+  <style>
+    html{
+      overflow-y: hidden;
+    }
+  </style>
+  <div style="position: fixed; top: 0; left: 0; height: 100%; width: 100%; background-color: #FFFFFF; display: flex; justify-content: center; align-items: center;">
+    <div style="max-width: 800px; text-align: center;">
+      <p style="font-size: 4vmax;">JavaScript is not enabled.</p>
+      <p style="font-size: 4vmax;">Please enable javascript in the settings in your browser.</p>
+    </div>
+  </div>
+</noscript>
 </body>
 </html>

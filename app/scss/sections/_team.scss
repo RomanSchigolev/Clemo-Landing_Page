@@ -9,7 +9,7 @@
   transform: translateY(-50%);
   border: none;
   & svg {
-    fill: #000;
+    fill: $accent;
     width: 3vw;
     transition: fill 0.3s linear;
   }

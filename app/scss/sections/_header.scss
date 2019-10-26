@@ -7,7 +7,7 @@
   opacity: 0;
   visibility: hidden;
   transform: translateX(-30px);
-  transition: all 1s ease;
+  transition: all 2s ease;
   &.logo--appear{
     opacity: 1;
     visibility: visible;
@@ -28,7 +28,7 @@
     opacity: 0;
     visibility: hidden;
     transform: translateY(20px);
-    transition: all 0.5s ease;
+    transition: all 2s ease;
     &.item--appear{
       opacity: 1;
       visibility: visible;
@@ -70,7 +70,7 @@
       left: 0;
       bottom: -5px;
       width: 0;
-      height: 2px;
+      height: 0.15vmax;
       background-color: $accent;
       transition: all 0.2s linear;
     }

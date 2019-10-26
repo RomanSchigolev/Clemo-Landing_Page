@@ -1,3 +1,15 @@
+::-webkit-scrollbar{
+  width: 0.6vmax;
+}
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #000000;
+}
+body{
+  @include MonBold;
+}
 .container{
   width: 100%;
   max-width: 83.57vw;

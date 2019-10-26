@@ -11,12 +11,6 @@
     display: block;
     height: auto;
   }
-  &__reviews__text {
-    font-size: 1.538vmax;
-    @include MonLight;
-    color: $text-color;
-    line-height: 2.3vmax;
-  }
   &__item{
     cursor: pointer;
     &__photo img{
