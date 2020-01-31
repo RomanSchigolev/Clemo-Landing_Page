@@ -1,6 +1,8 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Clemo",
+    "short_name": "Clemo",
+    "start_url": ".",
+    "description": "Description",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -15,5 +17,6 @@
     ],
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "display": "standalone"
+    "display": "standalone",
+    "lang": "en-US"
 }

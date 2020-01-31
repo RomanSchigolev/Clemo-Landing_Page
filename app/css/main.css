@@ -162,33 +162,33 @@ a:focus {
 }
 
 .menu__item:nth-child(1) {
-  -webkit-transition-delay: 0.1s;
-  -o-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-}
-
-.menu__item:nth-child(2) {
-  -webkit-transition-delay: 0.2s;
-  -o-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-}
-
-.menu__item:nth-child(3) {
-  -webkit-transition-delay: 0.3s;
-  -o-transition-delay: 0.3s;
-  transition-delay: 0.3s;
-}
-
-.menu__item:nth-child(4) {
   -webkit-transition-delay: 0.4s;
   -o-transition-delay: 0.4s;
   transition-delay: 0.4s;
 }
 
+.menu__item:nth-child(2) {
+  -webkit-transition-delay: 0.8s;
+  -o-transition-delay: 0.8s;
+  transition-delay: 0.8s;
+}
+
+.menu__item:nth-child(3) {
+  -webkit-transition-delay: 1.2s;
+  -o-transition-delay: 1.2s;
+  transition-delay: 1.2s;
+}
+
+.menu__item:nth-child(4) {
+  -webkit-transition-delay: 1.6s;
+  -o-transition-delay: 1.6s;
+  transition-delay: 1.6s;
+}
+
 .menu__item:nth-child(5) {
-  -webkit-transition-delay: 0.5s;
-  -o-transition-delay: 0.5s;
-  transition-delay: 0.5s;
+  -webkit-transition-delay: 2s;
+  -o-transition-delay: 2s;
+  transition-delay: 2s;
 }
 
 .menu__link {
@@ -217,6 +217,15 @@ a:focus {
 }
 
 .menu__link:hover::after {
+  width: 50%;
+}
+
+.menu__link--active {
+  color: #000000;
+}
+
+.menu__link--active::after {
+  content: '';
   width: 50%;
 }
 
@@ -559,6 +568,10 @@ a:focus {
   right: 6px;
 }
 
+.team {
+  position: relative;
+}
+
 .team__list {
   position: relative;
   padding: 0 5vmax;
@@ -568,23 +581,6 @@ a:focus {
   display: flex;
   margin-bottom: 4.27vmax;
   overflow: hidden;
-}
-
-.team__list__indicators {
-  text-align: center;
-}
-
-.team__list__indicators .list__indicator {
-  border: 0.085vmax solid #000000;
-  border-radius: 50%;
-  width: 1.3675vmax;
-  height: 1.3675vmax;
-  background-color: transparent;
-  margin: 0 1.45vmax;
-}
-
-.team__list__indicators .list__indicator.indicator--active {
-  background-color: #000000;
 }
 
 .team__item {
@@ -625,6 +621,23 @@ a:focus {
 .team__item__prof {
   font-family: 'Montserrat Light', sans-serif;
   font-size: 1.538vmax;
+}
+
+.team__indicators {
+  text-align: center;
+}
+
+.team__indicator {
+  border: 0.085vmax solid #000000;
+  border-radius: 50%;
+  width: 1.3675vmax;
+  height: 1.3675vmax;
+  background-color: transparent;
+  margin: 0 1.45vmax;
+}
+
+.team__indicator.indicator--active {
+  background-color: #000000;
 }
 
 .clients__reviews {
@@ -881,6 +894,16 @@ a:focus {
   font-size: 1.196vmax;
   color: #656565;
   font-family: 'Montserrat Light', sans-serif;
+}
+
+.section__about {
+  border-top: 1px solid #d8d8d8;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: minmax(auto, 40vw) 1fr;
+  grid-column-gap: 7.1vmax;
 }
 
 /*==========  Desktop First  ==========*/

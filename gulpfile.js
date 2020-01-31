@@ -37,9 +37,9 @@ gulp.task('img-compress', () => {
 
 gulp.task('scripts', function(){
     return gulp.src([
-        'app/libs/jquery-3.3.1.min.js'
+        'app/libs/jquery-3.3.1.min.js',
       //  'app/libraries/wow.min.js',
-        //'app/libraries/jquery-ui.min.js',
+        //'app/libraries/jquery-ui.min.js'
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())

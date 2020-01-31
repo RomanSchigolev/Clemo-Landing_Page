@@ -1,8 +1,7 @@
-.section__team{
+.section__team {
   background-color: #ffe1bd;
 }
-
-.list__button{
+.list__button {
   background-color: transparent;
   position: absolute;
   top: 50%;
@@ -13,69 +12,70 @@
     width: 3vw;
     transition: fill 0.3s linear;
   }
-  &:focus svg{
+  &:focus svg {
     fill: #ffffff;
     transition: fill 0.3s linear;
   }
-  &--prev{
+  &--prev {
     left: 6px;
   }
-  &--next{
+  &--next {
     right: 6px;
   }
 }
-
-.team__list{
+.team {
   position: relative;
-  padding: 0 5vmax;
-  display: flex;
-  margin-bottom: 4.27vmax;
-  overflow: hidden;
-  &__indicators{
+  &__list {
+    position: relative;
+    padding: 0 5vmax;
+    display: flex;
+    margin-bottom: 4.27vmax;
+    overflow: hidden;
+  }
+  &__item {
     text-align: center;
-    .list__indicator{
-      border:0.085vmax solid $accent;
+    flex-basis: 33%;
+    &__photo {
       border-radius: 50%;
-      width: 1.3675vmax;
-      height: 1.3675vmax;
-      background-color: transparent;
-      margin: 0 1.45vmax;
-      &.indicator--active{
+      max-width: 14vw;
+      height: auto;
+      filter: grayscale(1);
+    }
+    &__name,
+    &__prof {
+      display: block;
+      color: $accent;
+    }
+    &__name {
+      @include MonBold;
+      font-size: 3.2vmax;
+      margin-top: 0.85vmax;
+      &::after {
+        content: '';
+        display: block;
+        width: 5vw;
+        height: 2px;
         background-color: $accent;
+        margin: 0.85vmax auto;
       }
     }
-  }
-}
-
-.team__item{
-  text-align: center;
-  flex-basis: 33%;
-  &__photo{
-    border-radius: 50%;
-    max-width: 14vw;
-    height: auto;
-    filter: grayscale(1);
-  }
-  &__name,
-  &__prof{
-    display: block;
-    color: $accent;
-  }
-  &__name{
-    @include MonBold;
-    font-size: 3.2vmax;
-    margin-top: 0.85vmax;
-    &::after{
-      content: '';
-      display: block;
-      width: 5vw;
-      height: 2px;
-      background-color: $accent;
-      margin: 0.85vmax auto;
+    &__prof {
+      @include MonLight;
+      font-size: 1.538vmax;
     }
   }
-  &__prof{
-    @include MonLight;
-    font-size: 1.538vmax;
+  &__indicators {
+    text-align: center;
+  }
+  &__indicator {
+    border: 0.085vmax solid $accent;
+    border-radius: 50%;
+    width: 1.3675vmax;
+    height: 1.3675vmax;
+    background-color: transparent;
+    margin: 0 1.45vmax;
+    &.indicator--active {
+      background-color: $accent;
+    }
   }
 }

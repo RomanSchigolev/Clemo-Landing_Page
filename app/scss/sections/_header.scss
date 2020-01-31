@@ -78,5 +78,12 @@
     &:hover::after{
       width: 50%;
     }
+    &--active{
+      color: $accent;
+      &::after{
+        content: '';
+        width: 50%;
+      }
+    }
   }
 }
