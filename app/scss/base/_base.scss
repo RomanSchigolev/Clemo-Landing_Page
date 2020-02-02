@@ -38,10 +38,13 @@ a:focus{
   }
 }
 .paragraph{
-  font-size: 1.538vmax;
+  font-size: 1.3vmax;
   @include MonLight;
   line-height: 2.3vmax;
   color: $text-color;
+  &--margin{
+    margin-bottom: 3vmax;
+  }
 }
 .btn--black{
   font-size: 1.56vmax;

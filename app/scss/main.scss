@@ -1,4 +1,7 @@
-@import 'variables/all';
+@import "abstracts/fonts";
+@import 'variables/colors';
+@import "base/base";
+@import 'abstracts/placeholders';
 @import 'sections/header';
 @import 'sections/hero';
 @import 'sections/services';
@@ -7,5 +10,5 @@
 @import 'sections/clients';
 @import 'sections/contact';
 @import "sections/footer";
-@import "sections/about";
+@import "pages/aboutUs";
 @import 'media';

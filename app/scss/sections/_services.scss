@@ -49,20 +49,9 @@
 }
 .description__text{
   &::before{
-    content: '';
-    display: block;
-    background-color: $accent;
-    height: 0.17vmax;
-    width: 4.7vw; 
+    @extend %lineSeparation;
     margin: 1.7vmax 0;
   }
-}
-
-.text__para:nth-child(1){
-  margin-bottom: 2.99vmax;
-}
-.text__para:last-child{
-  margin-bottom: 4.273vmax;
 }
 .description__button{
   text-decoration: none;
