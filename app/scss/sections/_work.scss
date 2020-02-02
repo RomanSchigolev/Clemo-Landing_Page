@@ -1,43 +1,28 @@
 .work{
   &__list{
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2.564vmax;
+    //grid-gap: 2.564vmax;
     grid-template-rows: auto;
-    grid-template-areas:
-    "img1 img2 img3"
-    "img1 img2 img3"
-    "img1 img2 img3"
-    "img4 img2 img6"
-    "img4 img2 img6"
-    "img4 img5 img6"
-    "img4 img5 img6"
-    "img4 img5 img6";
   }
   &__item{
     position: relative;
     &:nth-child(1){
-      grid-area: img1;
     }
     &:nth-child(2){
-      grid-area: img2;
       .work__item__text{
         align-items: flex-end;
       }
     }
     &:nth-child(3){
-      grid-area: img3;
     }
     &:nth-child(4){
-      grid-area: img4;
       .work__item__text{
         align-items: flex-end;
       }
     }
     &:nth-child(5){
-      grid-area: img5;
     }
     &:nth-child(6){
-      grid-area: img6;
       .work__item__text{
         align-items: flex-end;
       }

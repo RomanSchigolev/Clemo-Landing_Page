@@ -70,3 +70,9 @@ a:focus{
   border: none;
   outline: none;
 }
+
+.section--border {
+  border-width: 1px 0 1px;
+  border-color: #d8d8d8;
+  border-style: solid;
+}

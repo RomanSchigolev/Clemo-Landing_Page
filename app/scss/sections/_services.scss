@@ -50,6 +50,7 @@
 .description__text{
   &::before{
     @extend %lineSeparation;
+    background-color: $accent;
     margin: 1.7vmax 0;
   }
 }

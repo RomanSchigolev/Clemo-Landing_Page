@@ -1,9 +1,3 @@
-.section__about {
-  border-width: 1px 0 1px;
-  border-color: #d8d8d8;
-  border-style: solid;
-}
-
 .content {
   display: grid;
   grid-template-columns: 40vw 1fr;
@@ -16,11 +10,13 @@
     &::before {
       @extend %lineSeparation;
       margin: 3.5714vmax 0;
+      background-color: $accent;
     }
   }
 
   &__description::before {
     @extend %lineSeparation;
+    background-color: $accent;
     margin-bottom: 3.5714vmax;
   }
 }

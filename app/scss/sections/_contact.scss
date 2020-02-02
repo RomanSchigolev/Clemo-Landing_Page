@@ -129,6 +129,10 @@
   &:hover{
     background-color: #ffe1bd;
   }
+
+  &:active {
+    background-color: darken(#ffe1bd, 15);
+  }
 }
 
 .social{

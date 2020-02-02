@@ -1,0 +1,37 @@
+.proposal {
+  padding: 5.714285vmax;
+  background-color: $accent;
+  color: #ffffff;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  &__recommendation {
+    & span {
+      font-size: 2.14285vmax;
+      @include MonLight;
+    }
+  }
+
+  &__price {
+    & span:first-child {
+      font-size: 2.857142vmax;
+    }
+
+    & span:last-child {
+      font-size: 2.14285vmax;
+      color: #8e8e8e;
+    }
+  }
+
+  &__btn:hover {
+    background-color: #ffe1bd;
+  }
+
+  &__btn:active {
+    background-color: darken(#ffe1bd, 15);
+  }
+}
