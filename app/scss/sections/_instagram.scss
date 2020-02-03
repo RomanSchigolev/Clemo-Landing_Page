@@ -1,0 +1,36 @@
+.preview {
+  text-align: center;
+  padding: 0 0.714285vmax;
+
+  &__list {
+    display: flex;
+    margin-bottom: 3.57142vmax;
+  }
+
+  &__item {
+    margin-right: 0.7142vmax;
+    overflow: hidden;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & img {
+      transition: transform 1s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.1);
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    border: 0.085vmax solid #e3e3e3;
+
+    &:hover {
+      border-color: $accent;
+    }
+  }
+}

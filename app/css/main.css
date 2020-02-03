@@ -116,7 +116,7 @@ a:focus {
   border-style: solid;
 }
 
-.description__text::before, .content__title::before, .content__description::before, .statistics__number::after {
+.description__text::before, .statistics__number::after, .content__title::before, .content__description::before {
   content: '';
   display: block;
   height: 0.17vmax;
@@ -879,32 +879,6 @@ a:focus {
   font-family: 'Montserrat Light', sans-serif;
 }
 
-.content {
-  display: grid;
-  grid-template-columns: 40vw 1fr;
-  grid-column-gap: 7.14285vmax;
-}
-
-.content__title {
-  padding-left: 5vmax;
-  max-width: 24.64285vw;
-}
-
-.content__title::before {
-  margin: 3.5714vmax 0;
-  background-color: #000000;
-}
-
-.content__description::before {
-  background-color: #000000;
-  margin-bottom: 3.5714vmax;
-}
-
-.title__slogan {
-  font-size: 2.8571vmax;
-  line-height: 3.85714vmax;
-}
-
 .statistics {
   padding: 7.14285vmax;
 }
@@ -934,6 +908,7 @@ a:focus {
 
 .statistics__number::after {
   margin: 1.42857vmax auto 1vmax auto;
+  background-color: #000000;
 }
 
 .statistics__title {
@@ -985,6 +960,32 @@ a:focus {
 
 .preview__link:hover {
   border-color: #000000;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 40vw 1fr;
+  grid-column-gap: 7.14285vmax;
+}
+
+.content__title {
+  padding-left: 5vmax;
+  max-width: 24.64285vw;
+}
+
+.content__title::before {
+  margin: 3.5714vmax 0;
+  background-color: #000000;
+}
+
+.content__description::before {
+  background-color: #000000;
+  margin-bottom: 3.5714vmax;
+}
+
+.title__slogan {
+  font-size: 2.8571vmax;
+  line-height: 3.85714vmax;
 }
 
 .proposal {

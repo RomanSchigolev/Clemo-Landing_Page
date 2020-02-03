@@ -1,0 +1,29 @@
+.statistics {
+  padding: 7.14285vmax;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__number {
+    font-size: 2.85714vmax;
+    display: block;
+
+    &::after {
+      @extend %lineSeparation;
+      margin: 1.42857vmax auto 1vmax auto;
+      background-color: $accent;
+    }
+  }
+
+  &__title {
+    @include MonLight;
+    font-size: 1.3vmax;
+  }
+}
