@@ -1034,9 +1034,24 @@ a:focus {
   justify-content: space-evenly;
 }
 
+.proposal__recommendation {
+  position: relative;
+}
+
 .proposal__recommendation span {
   font-size: 2.14285vmax;
   font-family: 'Montserrat Light', sans-serif;
+}
+
+.proposal__recommendation::after {
+  content: '';
+  display: inline-block;
+  height: 0.17vmax;
+  width: 4.7vw;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  right: -75%;
 }
 
 .proposal__price span:first-child {

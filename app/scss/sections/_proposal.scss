@@ -10,9 +10,21 @@
   }
 
   &__recommendation {
+    position: relative;
     & span {
       font-size: 2.14285vmax;
       @include MonLight;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      height: 0.17vmax;
+      width: 4.7vw;
+      background-color: #ffffff;
+      position: absolute;
+      top: 50%;
+      right: -75%;
     }
   }
 
