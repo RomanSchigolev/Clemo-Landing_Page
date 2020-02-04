@@ -72,6 +72,20 @@ a:focus {
   color: #ffffff;
 }
 
+.section--border {
+  border-width: 1px 0 1px;
+  border-color: #d8d8d8;
+  border-style: solid;
+}
+
+.section--black {
+  background-color: #000000;
+}
+
+.section--white {
+  background-color: #ffffff;
+}
+
 .paragraph {
   font-size: 1.3vmax;
   font-family: 'Montserrat Light', sans-serif;
@@ -108,12 +122,6 @@ a:focus {
   background-color: transparent;
   border: none;
   outline: none;
-}
-
-.section--border {
-  border-width: 1px 0 1px;
-  border-color: #d8d8d8;
-  border-style: solid;
 }
 
 .description__text::before, .statistics__number::after, .content__title::before, .content__description::before {
@@ -395,6 +403,7 @@ a:focus {
 
 .work__item {
   position: relative;
+  min-height: 35vh;
 }
 
 .work__item:nth-child(1) {
@@ -707,10 +716,6 @@ a:focus {
   background-color: #000000;
 }
 
-.section__contact {
-  background-color: #000000;
-}
-
 .contact__reach {
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 5.55vmax;
@@ -723,11 +728,6 @@ a:focus {
 .contact__form .form__input {
   position: relative;
   overflow: hidden;
-}
-
-.contact__copy {
-  background-color: #ffffff;
-  padding: 4.27vmax;
 }
 
 .input__contact {
@@ -1069,6 +1069,52 @@ a:focus {
 
 .proposal__btn:active {
   background-color: #ffbe71;
+}
+
+.section__contact {
+  border-width: 1px 0 0;
+  border-color: #d8d8d8;
+  border-style: solid;
+}
+
+.input__contact--forContactPage {
+  color: #000000;
+}
+
+.contacts__item--forContactPage {
+  color: #000000;
+}
+
+.contacts__item--forContactPage svg {
+  fill: #000000;
+}
+
+.contacts__item--forContactPage a {
+  color: #000000;
+}
+
+.contacts__phone--forContactPage::after, .contacts__mail--forContactPage::after {
+  background-color: #000000;
+}
+
+.button__send--forContactPage:hover {
+  color: #000000;
+}
+
+.social__link--forContactPage {
+  background-color: #000000;
+}
+
+.social__link--forContactPage svg {
+  fill: #ffffff;
+}
+
+.social__link--forContactPage:hover {
+  background-color: #ffe1bd;
+}
+
+.social__link--forContactPage:hover svg {
+  fill: #000000;
 }
 
 /*==========  Desktop First  ==========*/

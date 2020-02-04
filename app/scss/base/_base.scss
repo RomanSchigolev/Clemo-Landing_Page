@@ -36,6 +36,19 @@ a:focus{
       color: #ffffff;
     }
   }
+  &--border {
+    border-width: 1px 0 1px;
+    border-color: #d8d8d8;
+    border-style: solid;
+  }
+
+  &--black {
+    background-color: $accent;
+  }
+
+  &--white {
+    background-color: #ffffff;
+  }
 }
 .paragraph{
   font-size: 1.3vmax;
@@ -69,10 +82,4 @@ a:focus{
   background-color: transparent;
   border: none;
   outline: none;
-}
-
-.section--border {
-  border-width: 1px 0 1px;
-  border-color: #d8d8d8;
-  border-style: solid;
 }

@@ -6,6 +6,7 @@
   }
   &__item{
     position: relative;
+    min-height: 35vh;
     &:nth-child(1){
       grid-row: 1 / 2;
     }

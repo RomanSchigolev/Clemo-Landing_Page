@@ -1,0 +1,57 @@
+.section__contact {
+  border-width: 1px 0 0;
+  border-color: #d8d8d8;
+  border-style: solid;
+}
+
+.input {
+  &__contact--forContactPage {
+    color: $accent;
+  }
+}
+
+.contacts {
+  &__item--forContactPage {
+    color: $accent;
+
+    & svg {
+      fill: $accent;
+    }
+
+    & a {
+      color: $accent;
+    }
+  }
+
+  &__phone--forContactPage,
+  &__mail--forContactPage {
+    &::after {
+      background-color: $accent;
+    }
+  }
+}
+
+.button__send--forContactPage {
+  &:hover {
+    color: $accent;
+  }
+}
+
+.social {
+
+  &__link--forContactPage {
+    background-color: $accent;
+
+    & svg {
+      fill: #ffffff;
+    }
+
+    &:hover {
+      background-color: #ffe1bd;
+
+      & svg {
+        fill: $accent;
+      }
+    }
+  }
+}
