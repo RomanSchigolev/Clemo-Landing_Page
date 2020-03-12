@@ -3,6 +3,10 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2.564vmax;
     grid-template-rows: auto;
+
+    &:not(:last-child) {
+      margin-bottom: 2.564vmax;
+    }
   }
   &__item{
     position: relative;

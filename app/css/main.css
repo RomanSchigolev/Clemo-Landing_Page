@@ -54,12 +54,12 @@ a:focus {
 }
 
 .section {
-  padding: 7.69vmax 0 8.547vmax;
+  padding: 7.6vmax 0 7.6vmax;
 }
 
 .section__header {
   text-align: center;
-  margin: 0 auto 8.547vmax;
+  margin: 0 auto 7vmax;
 }
 
 .section__title {
@@ -399,6 +399,10 @@ a:focus {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2.564vmax;
   grid-template-rows: auto;
+}
+
+.work__list:not(:last-child) {
+  margin-bottom: 2.564vmax;
 }
 
 .work__item {
@@ -1115,6 +1119,22 @@ a:focus {
 
 .social__link--forContactPage:hover svg {
   fill: #000000;
+}
+
+.work-division {
+  margin-bottom: 7vmax;
+}
+
+.work-division__button {
+  background: transparent;
+  border: none;
+  font-family: 'Montserrat Light', sans-serif;
+  color: #989898;
+  font-size: 1.3vmax;
+}
+
+.work-division__button--active {
+  color: #000000;
 }
 
 /*==========  Desktop First  ==========*/

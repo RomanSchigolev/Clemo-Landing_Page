@@ -1,0 +1,14 @@
+.work-division {
+  margin-bottom: 7vmax;
+  &__button {
+    background: transparent;
+    border: none;
+    @include MonLight;
+    color: $menu_links-color;
+    font-size: 1.3vmax;
+
+    &--active {
+      color: $accent;
+    }
+  }
+}
