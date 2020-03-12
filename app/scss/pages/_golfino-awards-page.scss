@@ -1,0 +1,69 @@
+.project {
+
+  margin-bottom: 7vmax;
+
+  &__slider-buttons {
+    margin-bottom: 7vmax;
+
+    & li:not(:last-child) {
+      margin-right: 1.7vmax;
+    }
+  }
+
+  &__slider__button {
+    font-size: 1.3vmax;
+    @include MonLight;
+    color: $menu_links-color;
+    background: transparent;
+    border: none;
+  }
+
+  &__list-images {
+    margin-bottom: 3.5vmax;
+  }
+
+  &__slider-dots li:not(:last-child) {
+    margin-right: 1.45vmax;
+  }
+}
+
+.section__related-works {
+  background-color: #ffe1bd;
+}
+
+.work-similar {
+
+  &__list {
+    margin-bottom: 3.5vmax;
+  }
+
+  &__text {
+    max-width: 22vw;
+  }
+
+  &__title {
+    font-size: 3.4vmin;
+    font-family: 'Montserrat Bold', sans-serif;
+    color: #000000;
+    line-height: 1;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 5vw;
+      height: 2px;
+      background-color: #000000;
+      margin: 1.4vmax 0;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.538vmin;
+    color: #000000;
+    font-family: 'Montserrat Light', sans-serif;
+  }
+
+  &__slider-dots li:not(:last-child) {
+    margin-right: 1.45vmax;
+  }
+}

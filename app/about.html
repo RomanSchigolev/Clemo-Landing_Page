@@ -20,7 +20,7 @@
   <!-- Fonts Google -->
 </head>
 <body>
-<header class="header">
+<header class="header header--border">
   <div class="container">
     <div class="header__content main_flex__nowrap flex__align-items_center flex__jcontent_between">
       <div class="logo">
@@ -55,8 +55,10 @@
         <h2 class="section__title">about us</h2>
       </div>
       <div class="content">
-        <div class="content__photo">
-          <img class="img-responsive" src="img/about-us__photo.jpg" alt="Our workspace">
+        <div class="content__notion">
+          <div class="content__photo">
+            <img class="img-responsive" src="img/about-us__photo.jpg" alt="Our workspace">
+          </div>
           <div class="content__title">
             <h3 class="title__slogan">we create
               the best projects
@@ -138,11 +140,11 @@
 		"/>
 </svg>
         </button>
-        <div class="team__indicators">
-          <button class="team__indicator indicator--active" type="button"></button>
-          <button class="team__indicator" type="button"></button>
-          <button class="team__indicator" type="button"></button>
-        </div>
+        <ul class="team__indicators main_flex__nowrap flex__jcontent_center">
+          <li><button class="slider-dot slider-dot--active" type="button"></button></li>
+          <li><button class="slider-dot" type="button"></button></li>
+          <li><button class="slider-dot" type="button"></button></li>
+        </ul>
       </div>
     </div>
   </section>

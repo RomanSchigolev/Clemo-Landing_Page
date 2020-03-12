@@ -31,16 +31,9 @@
     margin-bottom: 4.27vmax;
     &__indicators{
       text-align: center;
-      .list__indicator{
-        border:0.085vmax solid $accent;
-        border-radius: 50%;
-        width: 1.3675vmax;
-        height: 1.3675vmax;
-        background-color: transparent;
-        margin: 0 1.45vmax;
-        &.indicator--active{
-          background-color: $accent;
-        }
+
+      & li:not(:last-child) {
+        margin-right: 1.45vmax;
       }
     }
   }

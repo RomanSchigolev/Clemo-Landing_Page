@@ -73,9 +73,7 @@ a:focus {
 }
 
 .section--border {
-  border-width: 1px 0 1px;
-  border-color: #d8d8d8;
-  border-style: solid;
+  border-bottom: 0.1vw solid #d8d8d8;
 }
 
 .section--black {
@@ -124,6 +122,18 @@ a:focus {
   outline: none;
 }
 
+.slider-dot {
+  border: 0.085vmax solid #000000;
+  border-radius: 50%;
+  width: 1.3675vmax;
+  height: 1.3675vmax;
+  background-color: transparent;
+}
+
+.slider-dot--active {
+  background-color: #000000;
+}
+
 .description__text::before, .statistics__number::after, .content__title::before, .content__description::before {
   content: '';
   display: block;
@@ -134,6 +144,10 @@ a:focus {
 .header {
   padding-top: 5.128vmax;
   padding-bottom: 5.9829vmax;
+}
+
+.header--border {
+  border-bottom: 0.1vw solid #d8d8d8;
 }
 
 .logo {
@@ -644,17 +658,8 @@ a:focus {
   text-align: center;
 }
 
-.team__indicator {
-  border: 0.085vmax solid #000000;
-  border-radius: 50%;
-  width: 1.3675vmax;
-  height: 1.3675vmax;
-  background-color: transparent;
-  margin: 0 1.45vmax;
-}
-
-.team__indicator.indicator--active {
-  background-color: #000000;
+.team__indicators li:not(:last-child) {
+  margin-right: 1.45vmax;
 }
 
 .clients__reviews {
@@ -707,17 +712,8 @@ a:focus {
   text-align: center;
 }
 
-.clients__list__indicators .list__indicator {
-  border: 0.085vmax solid #000000;
-  border-radius: 50%;
-  width: 1.3675vmax;
-  height: 1.3675vmax;
-  background-color: transparent;
-  margin: 0 1.45vmax;
-}
-
-.clients__list__indicators .list__indicator.indicator--active {
-  background-color: #000000;
+.clients__list__indicators li:not(:last-child) {
+  margin-right: 1.45vmax;
 }
 
 .contact__reach {
@@ -997,13 +993,17 @@ a:focus {
   grid-column-gap: 7.14285vmax;
 }
 
+.content__photo {
+  margin-bottom: 3.5714vmax;
+}
+
 .content__title {
   padding-left: 5vmax;
   max-width: 24.64285vw;
 }
 
 .content__title::before {
-  margin: 3.5714vmax 0;
+  margin: 0 0 3.5714vmax;
   background-color: #000000;
 }
 
@@ -1075,12 +1075,6 @@ a:focus {
   background-color: #ffbe71;
 }
 
-.section__contact {
-  border-width: 1px 0 0;
-  border-color: #d8d8d8;
-  border-style: solid;
-}
-
 .input__contact--forContactPage {
   color: #000000;
 }
@@ -1135,6 +1129,72 @@ a:focus {
 
 .work-division__button--active {
   color: #000000;
+}
+
+.project {
+  margin-bottom: 7vmax;
+}
+
+.project__slider-buttons {
+  margin-bottom: 7vmax;
+}
+
+.project__slider-buttons li:not(:last-child) {
+  margin-right: 1.7vmax;
+}
+
+.project__slider__button {
+  font-size: 1.3vmax;
+  font-family: 'Montserrat Light', sans-serif;
+  color: #989898;
+  background: transparent;
+  border: none;
+}
+
+.project__list-images {
+  margin-bottom: 3.5vmax;
+}
+
+.project__slider-dots li:not(:last-child) {
+  margin-right: 1.45vmax;
+}
+
+.section__related-works {
+  background-color: #ffe1bd;
+}
+
+.work-similar__list {
+  margin-bottom: 3.5vmax;
+}
+
+.work-similar__text {
+  max-width: 22vw;
+}
+
+.work-similar__title {
+  font-size: 3.4vmin;
+  font-family: 'Montserrat Bold', sans-serif;
+  color: #000000;
+  line-height: 1;
+}
+
+.work-similar__title::after {
+  content: '';
+  display: block;
+  width: 5vw;
+  height: 2px;
+  background-color: #000000;
+  margin: 1.4vmax 0;
+}
+
+.work-similar__subtitle {
+  font-size: 1.538vmin;
+  color: #000000;
+  font-family: 'Montserrat Light', sans-serif;
+}
+
+.work-similar__slider-dots li:not(:last-child) {
+  margin-right: 1.45vmax;
 }
 
 /*==========  Desktop First  ==========*/

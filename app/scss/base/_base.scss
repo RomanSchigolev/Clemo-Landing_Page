@@ -37,9 +37,7 @@ a:focus{
     }
   }
   &--border {
-    border-width: 1px 0 1px;
-    border-color: #d8d8d8;
-    border-style: solid;
+    border-bottom: 0.1vw solid #d8d8d8;
   }
 
   &--black {
@@ -82,4 +80,15 @@ a:focus{
   background-color: transparent;
   border: none;
   outline: none;
+}
+
+.slider-dot {
+  border: 0.085vmax solid $accent;
+  border-radius: 50%;
+  width: 1.3675vmax;
+  height: 1.3675vmax;
+  background-color: transparent;
+  &--active {
+    background-color: $accent;
+  }
 }

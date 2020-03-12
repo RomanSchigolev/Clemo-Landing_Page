@@ -3,13 +3,17 @@
   grid-template-columns: 40vw 1fr;
   grid-column-gap: 7.14285vmax;
 
+  &__photo {
+    margin-bottom: 3.5714vmax;
+  }
+
   &__title {
     padding-left: 5vmax;
     max-width: 24.64285vw;
 
     &::before {
       @extend %lineSeparation;
-      margin: 3.5714vmax 0;
+      margin:0 0 3.5714vmax;
       background-color: $accent;
     }
   }
