@@ -97,11 +97,14 @@ gulp.task('prebuild', async () => {
   let buildFonts = gulp.src('app/fonts/**/*') // Переносим шрифты в продакшен
     .pipe(gulp.dest('dist/fonts'));
 
-  let buildJs = gulp.src('app/js/**/*') // Переносим скрипты в продакшен
-    .pipe(gulp.dest('dist/js'));
+  let buildJs = gulp.src('app/script/**/*') // Переносим скрипты в продакшен
+    .pipe(gulp.dest('dist/script'));
 
   let buildHtml = gulp.src('app/*.html') // Переносим HTML в продакшен
     .pipe(gulp.dest('dist'));
+
+  let buildImg = gulp.src('app/img/**/*')
+    .pipe(gulp.dest('dist/img'));
 });
 
 gulp.task('watch', () => {
@@ -110,5 +113,5 @@ gulp.task('watch', () => {
   gulp.watch(['libs/**/*.js', 'app/js/main.js'], gulp.parallel('scripts'));
 });
 gulp.task('default', gulp.parallel('watch', 'browserSync', 'sass', 'css-libs', /*'img-compress'*/ 'scripts'));
-gulp.task('build', gulp.parallel('prebuild', 'clean', 'sass'));
+gulp.task('build', gulp.parallel('clean', 'prebuild'));
 
