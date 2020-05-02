@@ -10,6 +10,7 @@
   & svg {
     fill: $accent;
     width: 3vw;
+    height: 3vw;
     transition: fill 0.3s linear;
   }
   &:focus svg {

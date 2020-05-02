@@ -9,8 +9,12 @@ const
   rename = require('gulp-rename'),
   del = require('del'),
   autoprefixer = require('gulp-autoprefixer'),
-  //imagemin        = require('gulp-imagemin'),
-  tinypng = require('gulp-tinypng');
+  // imagemin        = require('gulp-imagemin'),
+  tinypng = require('gulp-tinypng'),
+  svgmin = require('gulp-svgmin'),
+  // cheerio = require('gulp-cheerio'),
+  replace = require('gulp-replace'),
+  svgSprite = require('gulp-svg-sprite');
 
 gulp.task('sass', () => {
   return gulp.src('app/scss/main.scss')
@@ -35,7 +39,25 @@ gulp.task('img-compress', () => {
     .pipe(gulp.dest('app/img/img_compress/'))
 });
 
-gulp.task('scripts', function () {
+gulp.task('svg', () => {
+  return gulp.src('app/img/svg/*.svg')
+    .pipe(svgmin({
+      js2svg: {
+        pretty: true
+      }
+    }))
+    .pipe(replace('&gt;', '>'))
+    .pipe(svgSprite({
+      mode: {
+        symbol: {
+          sprite: 'sprite.svg'
+        }
+      }
+    }))
+    .pipe(gulp.dest('app/img/svg/'))
+});
+
+gulp.task('scripts', () => {
   return gulp.src([
     'app/libs/jquery-3.3.1.min.js',
     //  'app/libraries/wow.min.js',
