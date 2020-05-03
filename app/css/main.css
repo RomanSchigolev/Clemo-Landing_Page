@@ -22,6 +22,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Montserrat Hairline';
+  src: url("../fonts/montserrat-hairline.eot");
+  src: url("../fonts/montserrat-hairline.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-hairline.woff") format("woff"), url("../fonts/montserrat-hairline.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 ::-webkit-scrollbar {
   width: 0.6vmax;
 }
@@ -54,7 +62,7 @@ a:focus {
 }
 
 .section {
-  padding: 7.6vmax 0 7.6vmax;
+  padding: 6.4vmax 0 7.6vmax;
 }
 
 .section__header {
@@ -415,8 +423,8 @@ a:focus {
   grid-template-rows: auto;
 }
 
-.work__list:not(:last-child) {
-  margin-bottom: 2.564vmax;
+.work__list:last-child {
+  margin-top: 2.564vmax;
 }
 
 .work__item {
@@ -1118,6 +1126,10 @@ a:focus {
 
 .work-division {
   margin-bottom: 7vmax;
+}
+
+.work-division__item:not(:last-child) {
+  margin-right: 1.78vmax;
 }
 
 .work-division__button {

@@ -4,8 +4,8 @@
     grid-gap: 2.564vmax;
     grid-template-rows: auto;
 
-    &:not(:last-child) {
-      margin-bottom: 2.564vmax;
+    &:last-child {
+      margin-top: 2.564vmax;
     }
   }
   &__item{

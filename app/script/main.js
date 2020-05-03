@@ -23,6 +23,12 @@ document.addEventListener('DOMContentLoaded', function (event) {
       });
     }
 
+    var BUTTONS = document.querySelectorAll(".work-division__button");
+    BUTTONS.forEach(function (button) {
+      button.addEventListener("click", function (event) {
+        console.log(event.currentTarget.getAttribute("data-category"));
+      });
+    });
     appearHeader();
     window.addEventListener('scroll', appearDescriptionText);
   })();

@@ -19,6 +19,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
         item.classList.add('item--appear');
       });
     }
+
+    const BUTTONS = document.querySelectorAll(".work-division__button");
+    BUTTONS.forEach(function (button) {
+      button.addEventListener("click", function (event) {
+        console.log(event.currentTarget.getAttribute("data-category"));
+      });
+    });
+
     appearHeader();
     window.addEventListener('scroll', appearDescriptionText);
   })();

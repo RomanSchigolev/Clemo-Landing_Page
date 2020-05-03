@@ -88,7 +88,7 @@ gulp.task('clean', () => {
 });
 
 gulp.task('prebuild', async () => {
-  let buildCss = gulp.src([ // Переносим библиотеки в продакшен
+  let buildCss = gulp.src([ // Переносим стили в продакшен
     'app/css/main.css',
     'app/css/libs.min.css'
   ])
@@ -103,7 +103,7 @@ gulp.task('prebuild', async () => {
   let buildHtml = gulp.src('app/*.html') // Переносим HTML в продакшен
     .pipe(gulp.dest('dist'));
 
-  let buildImg = gulp.src('app/img/**/*')
+  let buildImg = gulp.src('app/img/**/*') // Переносим картинки в продакшен
     .pipe(gulp.dest('dist/img'));
 });
 

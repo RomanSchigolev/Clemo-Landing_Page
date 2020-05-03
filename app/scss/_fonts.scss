@@ -39,3 +39,17 @@
   @mixin MonBold {
     font-family: 'Montserrat Bold', sans-serif;
   }
+
+@font-face {
+  font-family: 'Montserrat Hairline';
+  src: url('../fonts/montserrat-hairline.eot');
+  src: url('../fonts/montserrat-hairline.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/montserrat-hairline.woff') format('woff'),
+  url('../fonts/montserrat-hairline.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin MonHair {
+  font-family: 'Montserrat Hairline', sans-serif;
+}

@@ -20,7 +20,7 @@
   <!-- Fonts Google -->
 </head>
 <body>
-<header class="header">
+<header class="header section--border">
   <div class="container">
     <div class="header__content main_flex__nowrap flex__align-items_center flex__jcontent_between">
       <div class="logo">
@@ -50,7 +50,7 @@
 </header>
 
 <main>
-  <section class="section--border">
+  <section class="section section--border">
     <div class="container">
       <div class="section__header">
         <h2 class="section__title">works</h2>
@@ -58,16 +58,16 @@
       <div class="work-division">
         <ul class="work-division__list main_flex__nowrap flex__jcontent_center">
           <li class="work-division__item">
-            <button class="work-division__button work-division__button--active">all</button>
+            <button class="work-division__button work-division__button--active" data-category="all">all</button>
           </li>
           <li class="work-division__item">
-            <button class="work-division__button">creative kitchen</button>
+            <button class="work-division__button" data-category="creative kitchen">creative kitchen</button>
           </li>
           <li class="work-division__item">
-            <button class="work-division__button">art installation</button>
+            <button class="work-division__button" data-category="art installation">art installation</button>
           </li>
           <li class="work-division__item">
-            <button class="work-division__button">print design</button>
+            <button class="work-division__button" data-category="print design">print design</button>
           </li>
         </ul>
       </div>
@@ -231,9 +231,6 @@
           </a>
         </li>
       </ul>
-      <div class="work__link text-center">
-        <button class="link__more btn--black">show more</button>
-      </div>
     </div>
   </section>
 </main>

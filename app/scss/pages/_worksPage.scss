@@ -1,5 +1,9 @@
 .work-division {
   margin-bottom: 7vmax;
+
+  &__item:not(:last-child) {
+    margin-right: 1.78vmax;
+  }
   &__button {
     background: transparent;
     border: none;
